@@ -1,0 +1,445 @@
+
+  
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+  
+}
+/*LEFT SECTION*/
+.left {
+  width: 25vw;
+  padding: 10px;
+ transition: 1s ease;
+}
+
+.home {
+  border-radius: 10px;
+  padding: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainlogo{
+  display: flex;
+  align-items: center;
+}
+.close{
+  display: none;
+}
+.close img{
+  cursor: pointer;
+}
+.logo h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.logo i {
+  font-size: 30px;
+}
+.home ul li {
+  margin-top: 10px;
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+ul li h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+ul li i {
+  font-size: 26px;
+}
+
+.library{
+    border-radius:10px ;
+    margin-top: 10px;
+max-height: 73vh;
+overflow-y: auto;
+    position: relative;
+}
+.heading{
+    display: flex;
+   position: sticky;
+   top: 0;
+   background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.heading i{
+    font-size: 25px;
+}
+.lib-add{
+    border-radius: 50%;
+    padding: 7px;
+    transition: 0.6s ease;
+    cursor: pointer;
+
+}
+.lib-add:hover{
+    background-color: #242323;
+}
+.footer{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+  background-color: #121212;
+}
+.footer a{
+    color: gray;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+/*RIGHT SECTION*/
+
+/*Nav */
+.right {
+  border-radius: 20px;
+  width: 75vw;
+  height: 98vh;
+  background-color: #121212;
+  position: relative;
+
+}
+.right-wrap{
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+   
+}
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+    background-color: #0e0d0d;
+}
+.hamburger{
+  cursor: pointer;
+  display: none;
+  
+}
+.nav-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav i{
+    background-color: #090909;
+    font-size: 30px;
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav-right button{
+    background-color: transparent;
+    font-size: 17px;
+    padding: 10px;
+ cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+#signup{
+color: gray;
+transition: 1s ease;
+}
+#signup:hover{
+    color: rgb(206, 200, 200);
+}
+#login{
+background-color: white;
+color: black;
+border-radius: 30px;
+padding-left: 20px;
+padding-right: 20px;
+transition: 1s ease;
+}
+#login:hover{
+    background-color: rgb(170, 170, 170);
+}
+
+/*PLAY LIST SECTION*/
+
+.spotify-playlist{
+  padding: 15px;
+  
+}
+.card-container{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 57vh;
+  overflow-y: scroll;
+ 
+}
+.card{
+position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  width: 180px;
+  padding: 10px;
+}
+.card:hover{
+  background-color: #1F1F1F;
+  cursor: pointer;
+}
+.card .play{
+  position: absolute;
+  top: 110px;
+  right: 15px;
+  opacity: 0;
+
+
+  transform: translateY(15px);
+  transition: 0.3s ease;
+}
+.card .play i{
+font-size: 50px;
+display: flex;
+text-shadow: 0px 0px 10px rgb(0, 0, 0);
+justify-content: center;
+align-items: center;
+
+color:#1fd35e;
+
+}
+.card:hover .play{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card img{
+  width: 160px;
+  
+  border-radius: 20px 20px 10px 10px;
+}
+.card p{
+  color: gray;
+}
+.card > *{
+  padding-top:7px ;
+}
+/*Play bar*/
+.playbar{
+position: absolute;
+bottom: 20px;
+
+left: 20px;
+background-color:#090909;
+width: 93%;
+
+padding: 20px;
+border-radius: 20px;
+}
+.abovebar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.playbar .songbuttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.songbuttons img{
+  color: #1fd35e;
+
+  cursor: pointer;
+}
+#play,#previous,#next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  padding: 3px;
+  background-color:#1fd35e;
+  border-radius: 50%;
+}
+.songlist{
+overflow-y:auto ;
+
+}
+.songlist ul{
+ 
+  padding: 0px 20px;
+}
+.songlist ul li{
+list-style-type: disc;
+  font-size: 15px;
+ display: flex;
+ justify-content: space-between;
+ gap: 20px;
+cursor: pointer;
+padding-top: 15px;
+border: 1px solid white;
+border-radius: 8px;
+margin: 12px;
+padding: 10px;
+
+  }
+
+.playnow i{
+  font-size: 30px;
+  color: #1fd35e;
+}
+.seekbar{
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+ 
+ background-color: #1fd35e;
+  height: 5px;
+  border: 2px solid #1fd35e;
+  border-radius: 15px;
+  width: 97%;
+
+}
+.circle {
+  height: 15px;
+  position: relative;
+  bottom: 7px;
+  left: -0.2%;
+  width: 15px;
+  border-radius: 13px;
+  background-color: #1fd35e;
+  transition: left 0.6s;
+}
+.volume{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 4px;
+ cursor: pointer;
+}
+.range input{
+  width: 80px;
+  accent-color: #1fd35e;
+  cursor: pointer;
+}
+
+/*media queries for responsiveness*/
+@media (max-width:800px) {
+  .left{
+    position: absolute;
+    left: -100%;
+  z-index: 6;
+  width: 80%;
+  height: 100%;
+
+  }
+  .right{
+    width: 100vw;
+  }
+  .card {
+    width: 180px;
+    
+
+  }
+  .card img{
+    width: 160px;
+  }
+  .hamburger{
+    display: block;
+  
+  }
+  .playbar{
+    padding: 10px;
+    
+   height: 100px;
+   width: 95vw;
+   left: 2%;
+   z-index: 5;
+  }
+ 
+  .seekbar{
+    left: 0.2%;
+  }
+  .close{
+    display: block;
+  }
+  .songbuttons{
+    padding: 10px;
+  
+  }
+  .songinfo{
+    font-size: 15px;
+  }
+  .card-container{
+       max-height: 67vh;
+       justify-content: center;
+  }
+  
+}
+
+@media (max-width:380px) {
+  .card {
+    width: 150px;
+ padding: 0%;
+
+  }
+  .card img{
+    width: 120px;
+  }
+ .nav{
+  gap: 0px;
+ }
+ nav i{
+  background-color: #090909;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.nav-right button{
+  background-color: transparent;
+  font-size: 15px;
+  padding: 8px;
+cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+#signup{
+color: gray;
+transition: 1s ease;
+}
+
+#login{
+background-color: white;
+color: black;
+border-radius: 30px;
+padding-left: 20px;
+padding-right: 20px;
+
+}}

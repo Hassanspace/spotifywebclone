@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+
+    <title>Spotify - Web player</title>
+  </head>
+  <body>
+   
+    <div class="container flex roboto-regular">
+      <div class="left " >
+        
+        <div class="home bg-gray">
+            <div class="logo">
+               <div class="mainlogo"><i class="ri-spotify-fill"></i><h4>Spotify</h4></div>
+               <div class="close"><img src="close.svg" alt=""></div>
+              </div>
+            <ul>
+              
+                <li><i class="ri-home-5-line"></i><h4>Home</h4></li>
+                <li><i class="ri-search-line"></i><h4>Search</h4></li>
+            </ul>
+        </div>
+        <div class="library bg-gray">
+            <div class="heading">
+                <i class="ri-book-shelf-line"></i>
+                <h4>Your Library</h4>
+                <i class="ri-add-large-line  lib-add" ></i>
+            </div>
+            <div class="songlist">
+              <ul>
+               
+              </ul>
+            </div>
+            <div class="footer">
+              <div><a href="#">legal</a></div>
+              <div><a href="#">Safety</a></div>
+              <div><a href="#">Privacy policy</a></div>
+              <div><a href="#">Cookies </a></div>
+              <div><a href="#">About Ads</a></div>
+              <div><a href="#">Accessability</a></div>
+            </div>
+        </div>
+       
+      </div>
+      <div class="right ">
+      <div class="right-wrap">
+        <nav>
+            <div class="nav-left">
+              <div class="hamburger">
+                <img src="hamburger.svg" alt="">
+              </div>
+            <div class="left-right-arrow"> 
+              <i class="ri-arrow-left-s-line"></i>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            </div>
+            <div class="nav-right">
+             <button id="signup">Sign up</button>
+             <button id="login">Log in</button>
+            </div>
+         </nav>
+         <div class="spotify-playlist">
+          <h1>Spotify Playlist</h1>
+          <!--PLAYLIST CARDS-->
+          <div class="card-container">
+            
+            
+         
+           </div>
+           <!--PLAY BAR AREA-->
+           <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+           <div class="abovebar"> <div class="songinfo"></div>
+           <div class="songbuttons">
+             <div class="previous"><img id="previous" src="previous.svg" alt=""></div>
+             <div class="play"><img id="play" src="play.svg" alt=""></div>
+             <div class="next"><img id="next" src="next.svg" alt=""></div>
+           </div>
+         <div class="time-volume">
+          <div class="volume">
+            <img src="volume.svg" alt="">
+            <div class="range"><input type="range" name="volume" id=""></div>
+          </div>
+          <div class="songtime"></div></div>
+         </div>
+        </div>
+         </div>
+        
+      </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.border{
+    border: 2px solid red;
+    margin: 5px;
+}
+
+.flex{
+    display: flex;
+}
+.justify-content{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+.bg-gray{
+    background-color: #121212;
+   
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+/* WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #2e2e2e; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4b4b4b; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Roundness of the scrollbar thumb */
+    border: 2px solid #2e2e2e; /* Border around the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5e5e5e; /* Color when hovering over the scrollbar thumb */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #4b4b4b #2e2e2e; /* Thumb color and track color */
+}
+
+/* For other browsers (not universally supported) */
+body {
+    scrollbar-color: #4b4b4b #2e2e2e; /* Thumb color and track color */
+    scrollbar-width: thin; /* Width of the scrollbar */
+}
+
+
+
